@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    background: #0a0a0a;
+    color: #00ff00;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.terminal-container {
+    width: 95%;
+    height: 95%;
+    background: #1a1a1a;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-header {
+    background: #2d2d2d;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+}
+
+.terminal-title {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.minimize {
+    background: #ffbd2e;
+}
+
+.maximize {
+    background: #28ca42;
+}
+
+.close {
+    background: #ff5f56;
+}
+
+.terminal-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.output {
+    flex: 1;
+    white-space: pre-wrap;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    color: #00ccff;
+    font-weight: bold;
+}
+
+.command-output {
+    margin: 10px 0;
+}
+
+.error {
+    color: #ff4444;
+}
+
+.success {
+    color: #44ff44;
+}
+
+.warning {
+    color: #ffaa00;
+}
+
+.info {
+    color: #00aaff;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.prompt {
+    color: #00ff00;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.command-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    outline: none;
+}
+
+.command-input::placeholder {
+    color: #666;
+}
+
+/* Table styling for student records */
+.student-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.student-table th,
+.student-table td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: left;
+}
+
+.student-table th {
+    background: #333;
+    color: #00ccff;
+    font-weight: bold;
+}
+
+.student-table tr:nth-child(even) {
+    background: #252525;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #1a1a1a;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    width: 70%;
+    max-width: 600px;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+}
+
+.close-modal {
+    color: #ff5f56;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #ff8f86;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00ccff;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    background: #2d2d2d;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #00ff00;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+}
+
+.btn {
+    background: #333;
+    color: #00ff00;
+    border: 1px solid #555;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #444;
+    border-color: #00ff00;
+}
+
+.btn-primary {
+    background: #0066cc;
+    border-color: #0088ff;
+}
+
+.btn-primary:hover {
+    background: #0088ff;
+}
+
+.btn-danger {
+    background: #cc0000;
+    border-color: #ff0000;
+}
+
+.btn-danger:hover {
+    background: #ff0000;
+}
+
+/* Scrollbar styling */
+.terminal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terminal-content::-webkit-scrollbar-track {
+    background: #2d2d2d;
+}
+
+.terminal-content::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 4px;
+}
+
+.terminal-content::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Processing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <span class="terminal-title">Student Result Processing System v1.0</span>
+            <div class="terminal-controls">
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+                <span class="control close"></span>
+            </div>
+        </div>
+        
+        <div class="terminal-content" id="terminal">
+            <div class="output" id="output">
+                <div class="welcome-text">
+                    ==========================================<br>
+                    STUDENT RESULT PROCESSING SYSTEM<br>
+                    ==========================================<br>
+                    Developed using Core Data Structures<br>
+                    - Linked List for Student Records<br>
+                    - Arrays and Sorting Algorithms<br>
+                    - Search Algorithms (Linear/Binary)<br>
+                    - Stack for Undo Operations<br>
+                    ==========================================<br><br>
+                </div>
+            </div>
+            
+            <div class="input-line">
+                <span class="prompt">student-system:~$ </span>
+                <input type="text" id="commandInput" class="command-input" autocomplete="off" placeholder="Type 'menu' to start or 'help' for commands">
+            </div>
+        </div>
+        
+        <!-- Modal for student input forms -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data-structures.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
